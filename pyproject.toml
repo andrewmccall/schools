@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tessa"
+version = "1.0"
+dependencies = [
+  "ipykernel",
+  "pandas",
+  "openpyxl",
+  "matplotlib",
+  "duckdb",
+  "pyarrow",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Tessa Leigh", email = "tessa_20@live.co.uk"},
+]
