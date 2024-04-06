@@ -41,7 +41,7 @@ def import_schools_finance():
     logger.info("Cleaning up data types")
 
     # Force column to string. 
-    df['Did Not Supply flag'] = df['Did Not Supply flag'].astype('|S') 
+    df['Did Not Supply flag'] = df['Did Not Supply flag'].astype('str') 
 
     # Remove everything before the first space, to get rid of the I01 etc for cols 32-105
     for col in df.columns[32:106]:
